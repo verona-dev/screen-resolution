@@ -1,0 +1,485 @@
+.device:root {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Cutive Mono', monospace;
+}
+nav,
+.device,
+.viewport,
+.device-height-text,
+.device-width-text,
+.viewport-height-text,
+.viewport-width-text {
+  font-family: 'VT323', monospace;
+}
+body,
+header {
+  background-color: #002C57;
+}
+.device-resolution,
+.viewport-resolution {
+  background-color: #C7EDE6;
+}
+.h2-wrapper,
+h3,
+footer {
+  background-color: #A62E6F;
+}
+nav a,
+h2,
+h3,
+footer p {
+  color: whitesmoke;
+}
+
+
+/*
+███    ███  █████  ██ ███    ██
+████  ████ ██   ██ ██ ████   ██
+██ ████ ██ ███████ ██ ██ ██  ██
+██  ██  ██ ██   ██ ██ ██  ██ ██
+██      ██ ██   ██ ██ ██   ████
+*/
+
+header {
+  padding: 10px 0;
+}
+nav,
+.wrapper,
+.h2-wrapper {
+  text-align: center;
+}
+nav a {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+}
+nav .icon-wrapper {
+  display: inline-block;
+}
+nav img {
+  height: 100px;
+  margin: 5px 15px 0 0;
+}
+h1 {
+  display: inline-block;
+  font-weight: 300;
+  margin-right: 30px;
+  text-transform: uppercase;
+}
+h3 {
+  border-radius: 12px 12px 0 0;
+  text-transform: uppercase;
+}
+p {
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.ruler {
+  background-image: url("img/ruler.png");
+  background-repeat: no-repeat;
+  border-top: 1px solid whitesmoke;
+  height: 30px;
+}
+.container {
+  border-radius: 12px;
+}
+.viewport-resolution {
+  cursor: default;
+}
+.device,
+.viewport {
+  font-size: 3rem;
+}
+
+/*
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+*/
+
+footer,
+.footer-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+footer {
+  overflow: hidden;
+  width: 100%;
+}
+footer a {
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+  width: 250px;
+}
+footer img {
+  height: 50px;
+  width: 50px;
+}
+
+/*
+███    ███ ███████ ██████  ██  █████
+████  ████ ██      ██   ██ ██ ██   ██
+██ ████ ██ █████   ██   ██ ██ ███████
+██  ██  ██ ██      ██   ██ ██ ██   ██
+██      ██ ███████ ██████  ██ ██   ██
+*/
+@media screen and (min-width: 1001px) {
+  h1,
+  .device,
+  .viewport {
+    font-size: 4rem;
+  }
+  .h2-wrapper {
+    padding: 20px 0;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+    padding: 25px 0;
+  }
+  .device,
+  .viewport {
+    margin: 3vh 0;
+  }
+  .device-width-text,
+  .device-height-text,
+  .viewport-width-text,
+  .viewport-height-text {
+    font-size: 1.6rem;
+  }
+  .wrapper {
+    align-items: center;
+    display: flex;
+    height: 60vh;
+    justify-content: space-evenly;
+  }
+  .container {
+    height: 400px;
+    margin: 0 20px;
+    width: 600px;
+  }
+  footer {
+    bottom: 0;
+    height: 10vh;
+    position: absolute;
+  }
+}
+
+/*
+ ██  ██████   ██████   ██████      ████████  ██████       ██ ██████   ██████   ██████      ██████  ██   ██
+███ ██  ████ ██  ████ ██  ████        ██    ██    ██     ███      ██ ██  ████ ██  ████     ██   ██  ██ ██
+ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██        ██    ██    ██      ██  █████  ██ ██ ██ ██ ██ ██     ██████    ███
+ ██ ████  ██ ████  ██ ████  ██        ██    ██    ██      ██      ██ ████  ██ ████  ██     ██       ██ ██
+ ██  ██████   ██████   ██████         ██     ██████       ██ ██████   ██████   ██████      ██      ██   ██
+*/
+
+@media screen and (min-width: 1001px) and (max-width: 1301px) and (orientation: landscape) {
+  .wrapper {
+    height: 50vh;
+  }
+  .container {
+    height: 40vh;
+    width: 40vw;
+  }
+  .device, 
+  .viewport {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1301px) and (orientation: portrait) {
+  .container {
+    height: 35vh;
+    width: 40vw;
+  }
+}
+
+/*
+ ██  ██████   ██████   ██████      ██████  ██   ██
+███ ██  ████ ██  ████ ██  ████     ██   ██  ██ ██
+ ██ ██ ██ ██ ██ ██ ██ ██ ██ ██     ██████    ███
+ ██ ████  ██ ████  ██ ████  ██     ██       ██ ██
+ ██  ██████   ██████   ██████      ██      ██   ██
+*/
+@media screen and (max-width: 1000px) {
+  header {
+    padding: 0;
+  }
+  h1 {
+    font-size: 3rem;
+    margin-right: 30px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .h2-wrapper {
+    padding: 20px 0;
+  }
+  h3 {
+    font-size: 1.6rem;
+    padding: 15px 0;
+  }
+  footer {
+    bottom: 0;
+    height: 8vh;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation : landscape) {
+  .container {
+    height: 50vh;
+    margin: 10vh auto 0;
+    width: 50vw;
+  }
+  .device,
+  .viewport {
+    font-size: 2.6rem;
+    margin: 4% 0;
+  }
+  footer {
+    height: 15vh;
+    margin-top: 10vh;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation : portrait) {
+  main {
+    overflow: hidden;
+  }
+  .ruler {
+    padding-bottom: 40px;
+  }
+  .container {
+    height: 30vh;
+    margin: 3vh auto 0;
+    width: 60vw;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  .device,
+  .viewport {
+    font-size: 2.6rem;
+    margin: 3vh 0;
+  }
+  p {
+    font-size: 1.3rem;
+    padding: 5px 0;
+  }
+}
+
+/*
+ █████       ██████       ██████      ██████  ██   ██
+██   ██     ██  ████     ██  ████     ██   ██  ██ ██
+ ██████     ██ ██ ██     ██ ██ ██     ██████    ███
+     ██     ████  ██     ████  ██     ██       ██ ██
+ █████       ██████       ██████      ██      ██   ██
+*/
+
+
+@media screen and (max-width: 900px) {
+  nav img {
+    height: 80px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation : landscape) {
+  .container {
+    height: 250px;
+    margin: 5vw auto 0;
+    width: 65vw;
+  }
+  footer {
+    bottom: 0;
+    height: 80px;
+    position: relative;
+  }
+  h3 {
+    padding: 15px 0;
+  }
+  .device,
+  .viewport {
+    font-size: 2.6rem;
+    margin: 5% 0 0;
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation : portrait) {
+  .device,
+  .viewport {
+    margin: 4vh 0;
+  }
+  footer {
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+/*
+ ██████  ██   ██  ██████      ██████  ██   ██
+██       ██   ██ ██  ████     ██   ██  ██ ██
+███████  ███████ ██ ██ ██     ██████    ███
+██    ██      ██ ████  ██     ██       ██ ██
+ ██████       ██  ██████      ██      ██   ██
+*/
+@media screen and (max-width: 641px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .h2-wrapper {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 641px) and (orientation: landscape) {
+  .container {
+    height: 80vh;
+  }
+  .h2-wrapper {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 641px) and (orientation : portrait) {
+  .container {
+    height: 25vh;
+    margin: 5vw auto 0;
+    width: 60vw;
+  }
+  h2 {
+    padding: 10px 0;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .device,
+  .viewport {
+    font-size: 2rem;
+    margin: 2vh 0;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
+/*
+███    ███  ██████  ██████  ██ ██      ███████
+████  ████ ██    ██ ██   ██ ██ ██      ██
+██ ████ ██ ██    ██ ██████  ██ ██      █████
+██  ██  ██ ██    ██ ██   ██ ██ ██      ██
+██      ██  ██████  ██████  ██ ███████ ███████
+*/
+@media screen and (max-width: 430px) {
+  header {
+    padding: 0;
+  }
+  nav img {
+    height: 70px;
+    margin: 0 5px 0;
+  }
+  .container {
+    height: 25vh;
+    margin: 5vh auto 0;
+    width: 70vw;
+  }
+  .h2-wrapper {
+    margin-top: 0;
+    padding: 0;
+  }
+  .ruler {
+    padding: 0;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 0.8rem;
+  }
+  .device,
+  .viewport {
+    margin: 2vw 0 0;
+    padding: 0;
+  }
+  .device-width-text,
+  .viewport-width-text {
+    padding-top: 1vh;
+  }
+  .device-height-text,
+  .viewport-height-text {
+    padding-bottom: 10px;
+  }
+}
+
+/*
+██ ██████  ██   ██  ██████  ███    ██ ███████     ███████
+██ ██   ██ ██   ██ ██    ██ ████   ██ ██          ██
+██ ██████  ███████ ██    ██ ██ ██  ██ █████       ███████
+██ ██      ██   ██ ██    ██ ██  ██ ██ ██               ██
+██ ██      ██   ██  ██████  ██   ████ ███████     ███████
+*/
+
+@media screen and (max-width: 325px) {
+  .container {
+    height: 150px;
+    margin: 3vh auto 0;
+  }
+  .device,
+  .viewport {
+    font-size: 2rem;
+    margin: 2vw 0 0;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    padding: 0;
+    text-align: center;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+/*
+███    ██  ██████  ██   ██ ██  █████
+████   ██ ██    ██ ██  ██  ██ ██   ██
+██ ██  ██ ██    ██ █████   ██ ███████
+██  ██ ██ ██    ██ ██  ██  ██ ██   ██
+██   ████  ██████  ██   ██ ██ ██   ██
+*/
+/* ======== Nokia 8110 =================*/
+@media screen and (max-width: 245px) {
+  h2,
+  h3 {
+    padding: 10px;
+  }
+  .device,
+  .viewport {
+    font-size: 1rem;
+    margin: 15px 0 0;
+  }
+  footer {
+    height: 15vh;
+    margin-top: 5vh;
+    position: relative;
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Website tool to find your screen resolution">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="text/png" href="img/favicon.svg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <title> Screen Resolution </title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <a href="#">
+        <div class="icon-wrapper">
+          <img src="img/nav-icon.png" alt="screen icon">
+        </div>
+        <h1> my Resolution </h1>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="h2-wrapper">
+        <h2> Online tool to find your screen resolution </h2>
+      </div>
+      <div class="ruler"></div>
+    </section>
+
+    <section class="boxes">
+      <div class="wrapper">
+        <div class="container device-resolution">
+          <h3> Your screen resolution: </h3>
+          <p id="device" class="device"></p>
+          <p id="device-width-text" class="device-width-text"></p>
+          <p id="device-height-text" class="device-height-text"></p>
+        </div>
+
+        <div class="container viewport-resolution">
+          <h3> Your viewport resolution: </h3>
+          <p id="viewport" class="viewport"></p>
+          <p id="viewport-width-text" class="viewport-width-text"></p>
+          <p id="viewport-height-text" class="viewport-height-text"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/verona-hub">
+      <div class="footer-wrapper">
+        <img class="github" src="img/icon-github.svg" alt="">
+        <p> verona </p>
+      </div>
+    </a>
+  </footer>
+  
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
