@@ -1,8 +1,16 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .device:root {
   font-size: 16px;
 }
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -27,8 +35,7 @@ header {
   background-color: #C7EDE6;
 }
 .h2-wrapper,
-h3,
-footer {
+h3 {
   background-color: #A62E6F;
 }
 nav a,
@@ -56,9 +63,15 @@ nav,
   text-align: center;
 }
 nav a {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-decoration: none;
 }
 nav .icon-wrapper {
@@ -109,9 +122,15 @@ p {
 
 footer,
 .footer-wrapper {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 footer {
   overflow: hidden;
@@ -153,7 +172,7 @@ footer img {
   }
   .device,
   .viewport {
-    margin: 3vh 0;
+    margin: 4vh 0 3vh;
   }
   .device-width-text,
   .device-height-text,
@@ -162,14 +181,21 @@ footer img {
     font-size: 1.6rem;
   }
   .wrapper {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: 60vh;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
+  
   .container {
     height: 400px;
-    margin: 0 20px;
+    margin: 50px 20px 0;
     width: 600px;
   }
   footer {
@@ -188,16 +214,16 @@ footer img {
 */
 
 @media screen and (min-width: 1001px) and (max-width: 1301px) and (orientation: landscape) {
-  .wrapper {
-    height: 50vh;
-  }
+
   .container {
     height: 40vh;
     width: 40vw;
   }
+  
   .device, 
   .viewport {
     margin: 0;
+    margin: 2vh 0 1vh;
   }
 }
 
@@ -224,9 +250,16 @@ footer img {
     margin-right: 30px;
   }
   .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .h2-wrapper {
     padding: 20px 0;
@@ -303,30 +336,34 @@ footer img {
 }
 
 @media screen and (max-width: 900px) and (orientation : landscape) {
+  h3 {
+    padding: 15px 0;
+  }
+  p {
+    padding: 5px;
+  }
   .container {
     height: 250px;
     margin: 5vw auto 0;
-    width: 65vw;
+    width: 45vw;
+  }
+  .device,
+  .viewport {
+    font-size: 2.6rem;
+    margin: 2vh 0 1vh;
   }
   footer {
     bottom: 0;
     height: 80px;
     position: relative;
   }
-  h3 {
-    padding: 15px 0;
-  }
-  .device,
-  .viewport {
-    font-size: 2.6rem;
-    margin: 5% 0 0;
-  }
 }
 
 @media screen and (max-width: 900px) and (orientation : portrait) {
+  
   .device,
   .viewport {
-    margin: 4vh 0;
+    margin: 4vh 0 3vh;
   }
   footer {
     bottom: 0;
@@ -353,9 +390,14 @@ footer img {
 @media screen and (max-width: 641px) and (orientation: landscape) {
   .container {
     height: 80vh;
+    width: 70vw;
   }
   .h2-wrapper {
     padding: 20px;
+  }
+  .device,
+  .viewport {
+    margin: 3vh 0 1vh;
   }
 }
 
@@ -398,8 +440,8 @@ footer img {
   }
   .container {
     height: 25vh;
-    margin: 5vh auto 0;
-    width: 70vw;
+    margin: 4vh auto 0;
+    width: 60vw;
   }
   .h2-wrapper {
     margin-top: 0;
@@ -416,7 +458,7 @@ footer img {
   }
   .device,
   .viewport {
-    margin: 2vw 0 0;
+    margin: 2vh 0 1vh;
     padding: 0;
   }
   .device-width-text,
@@ -426,6 +468,9 @@ footer img {
   .device-height-text,
   .viewport-height-text {
     padding-bottom: 10px;
+  }
+  footer {
+    bottom: 1vh;
   }
 }
 
@@ -445,7 +490,7 @@ footer img {
   .device,
   .viewport {
     font-size: 2rem;
-    margin: 2vw 0 0;
+    margin: 1vw 0 0;
   }
   h1 {
     font-size: 1rem;
@@ -466,7 +511,7 @@ footer img {
 ██  ██ ██ ██    ██ ██  ██  ██ ██   ██
 ██   ████  ██████  ██   ██ ██ ██   ██
 */
-/* ======== Nokia 8110 =================*/
+
 @media screen and (max-width: 245px) {
   h2,
   h3 {
